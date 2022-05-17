@@ -47,4 +47,5 @@ jobs:
           pip install pyinstaller
       - name: Compile to exe
         run: |
+          ls
           pyinstaller main.py
