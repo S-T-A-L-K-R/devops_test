@@ -4,6 +4,6 @@ import sample.helpers
 print(sample.core.get_hmm())
 
 if sample.helpers.get_answer() == True:
-    print("It works!!!")
+    x = input("It works!!!")
 else:
-    print("It doesn't work!!!")
+    x = input("It doesn't work!!!")
