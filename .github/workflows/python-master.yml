@@ -42,6 +42,9 @@ jobs:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v3
-      - run: |
+      - name: Install compiler library
+        run: |
           pip install pyinstaller
+      - name: Compile to exe
+        run: |
           pyinstaller main.py
