@@ -37,3 +37,11 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
+  release:
+    name: Make executable  
+    runs-on: windows-server
+    steps:
+      - uses: actions/checkout@v3
+      - run: |
+          pip install pyinstaller
+          pyinstaller main.py
