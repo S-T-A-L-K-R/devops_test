@@ -47,8 +47,8 @@ jobs:
           pip install pyinstaller
       - name: Compile to exe
         run: |
-          ls
           pyinstaller main.py
+          ls
       - name: Create release with exe
         id: create_release
         uses: actions/create-release@v1
